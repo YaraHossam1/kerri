@@ -171,9 +171,9 @@ header .content i {
   width: 100px;
 }
 /*! important */
-#clint .carousel-item {
+/* #clint .carousel-item {
   transition: transform 0.6s ease-in-out;
-}
+} */
 
 .clint .carousel-inner p {
   max-width: 710px;
