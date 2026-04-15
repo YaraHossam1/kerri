@@ -1,0 +1,206 @@
+:root {
+  --main-color: #e65f78;
+  --section-padding: 100px;
+  --text-color: #212529;
+  --second-text-color: #6c757d;
+  --main-transition: 0.4s;
+  --bg-section: #f8f9fa;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0 !important;
+}
+
+.header-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.header-section h2 {
+  font-size: 32px;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 20px !important;
+}
+
+.header-section p {
+  max-width: 460px;
+  color: var(--second-text-color);
+  margin-inline: auto;
+}
+/* Start navbar */
+nav .navbar-brand img {
+  width: 80px;
+}
+
+nav .navbar-nav .nav-link {
+  color: white;
+  transition: var(--main-transition) ease-in-out;
+}
+nav .navbar-nav .nav-link:hover {
+  color: var(--main-color);
+}
+nav .navbar-nav .nav-link.active {
+  color: var(--main-color);
+}
+nav .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* End navbar */
+
+/* Start hero section */
+header {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../Images/imgi_16_header-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+header .content h1 {
+  font-size: 28px;
+}
+header .content p {
+  max-width: 460px;
+  line-height: 29px;
+}
+
+header .content i {
+  bottom: 25px;
+}
+/* End hero section */
+
+/* Start About section */
+.about {
+  padding-block: var(--section-padding);
+}
+.about .content h3 span {
+  color: var(--main-color);
+}
+.about .content p {
+  color: var(--second-text-color);
+}
+
+.about .content ul li a {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: var(--main-transition);
+}
+
+.about .content ul li a:hover {
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+/* End About section */
+
+/* Start Service section */
+
+.service {
+  background-color: var(--bg-section);
+  padding-block: var(--section-padding);
+}
+.service .card {
+  background-color: transparent;
+  border: 1px solid #ddd;
+}
+.service .row i {
+  color: var(--main-color);
+}
+
+.service .card h3 {
+  color: var(--text-color);
+  position: relative;
+}
+.service .card h3::after {
+  content: "";
+  color: var(--text-color);
+  position: absolute;
+  height: 2px;
+  width: 40px;
+  background-color: var(--main-color);
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: var(--main-transition);
+}
+.service .card:hover h3::after {
+  width: 70px;
+}
+
+.service .card p {
+  color: var(--second-text-color);
+}
+/* End Service section */
+
+/* Start Clint section */
+.clint {
+  padding-block: var(--section-padding);
+}
+.clint .carousel-inner img {
+  width: 100px;
+}
+/*! important */
+#clint .carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+
+.clint .carousel-inner p {
+  max-width: 710px;
+  text-align: center;
+  color: var(--second-text-color);
+}
+.clint .carousel-inner i {
+  color: var(--main-color);
+}
+
+.clint .carousel-inner p:last-of-type {
+  color: var(--text-color);
+}
+
+.clint .carousel-indicators {
+  bottom: -60px;
+}
+
+.clint .carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 5px;
+  background-color: #efacb9;
+  border: 1px solid transparent;
+  border-radius: 999999px;
+}
+.clint .carousel-indicators [data-bs-target].active {
+  width: 25px;
+  background-color: var(--main-color);
+}
+/* End Clint section */
